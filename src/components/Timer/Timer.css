@@ -1,0 +1,10 @@
+.timer {
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6D69;
+    border-radius: 100%;
+    box-shadow: 4px 9px 23px rgba(253, 67, 67, 0.5);
+}
