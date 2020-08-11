@@ -39,8 +39,8 @@ const Timer = () => {
 
   return (
       <div className="timer">
-             <div className="time">
-                 <h2>{("0" + minutes).slice(-2)} : {("0" + seconds).slice(-2)}</h2>
+             <div className="time-container">
+                 <span className="time">{("0" + minutes).slice(-2)} : {("0" + seconds).slice(-2)}</span>
              </div>
 
              <div className="timer-button-container">
