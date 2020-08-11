@@ -3,7 +3,7 @@ import './Timer.css'
 import TimerButton from '../TimerButton/TimerButton';
 
 const Timer = () => {
-  const [seconds, setSeconds] = useState(56);
+  const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
