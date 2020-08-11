@@ -10,16 +10,16 @@ type Props = {
     isOn: boolean;
 }
 
-const icons = {
-    "Play" : faPlay,
-    "Pause" : faPause,
-    "Reset": faBackward
-}
-const TimerButton : React.FC<Props> = ({buttonAction, buttonValue}) => {
+const TimerButton : React.FC<Props> = ({buttonAction, buttonValue, isOn}) => {
     return (
-        <div className="timer-button">
-            {buttonValue == "start" ? 
-            <p><FontAwesomeIcon icon={faPlay} /></p> :
+        <div className="timer-button" onClick={buttonAction}>
+            {buttonValue === "start" ? 
+            <p>
+                {isOn ? 
+                <FontAwesomeIcon icon={faPause} /> :
+                <FontAwesomeIcon icon={faPlay} />
+                }
+            </p> :
             <p><FontAwesomeIcon icon={faBackward} /></p>
             }
         </div>
